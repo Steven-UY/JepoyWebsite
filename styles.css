@@ -1,3 +1,62 @@
-body {
-    font-family: sans-serif;
+
+@font-face {
+    font-family: clashDisplay;
+    src: url('/fonts/ClashDisplay-Medium.otf');
+    font-style: normal;
+    font-weight: 100;
+
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #24252a;
+}
+
+li, a{
+    font-family: "clashDisplay", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #a19b96;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 10;
+}
+
+.logo{
+    cursor: pointer;
+    width: 70px;
+    height: auto;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 20px;
+    margin-left: 60px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color:white;
+}
+
+
+
+
+
