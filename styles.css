@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #24252a;
+    background-color: black;
 }
 
 header{
@@ -22,22 +22,31 @@ header{
     padding-left: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0);
+    justify-content: space-between;
+    background-color: transparent;
+    z-index: 1;
 }
 
 .logo{
     cursor: pointer;
     width: 90px;
     height: auto;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+}
+
+nav{
+    background-color: transparent;
+}
+
+.nav_links{
+ background-color: transparent;
 }
 
 .nav_links li{
     display: inline-block;
     padding: 20px;
-    margin-left: 60px;  
+    margin-left: 60px; 
 }
 
 .nav_links li a {
@@ -48,18 +57,26 @@ li, a{
     font-family: "clashDisplay", sans-serif;
     font-weight: 500;
     font-size: 20px;
-    color: #a19b96;
+    color: white;
     text-decoration: none;
+    background-color: transparent;
 }
 
 .nav_links li a:hover{
     color:white;
 }
 
-video{
-    height: 100%;
-    width: 100%;
-    filter: brightness(0.5);
+.video-container{
+    overflow: hidden;
+    height: 850px;
+    position: relative;
 }
+
+video{
+    filter: brightness(0.5);
+    position: absolute;
+}
+
+
 
 
