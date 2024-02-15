@@ -63,20 +63,37 @@ li, a{
 }
 
 .nav_links li a:hover{
-    color:white;
+    color:grey;
 }
 
 .video-container{
     overflow: hidden;
-    height: 850px;
+    height: 44vw;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 video{
     filter: brightness(0.5);
     position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
+.hero-content{
+    position: absolute;
+    color: white;
+    font-family: clashDisplay;
+    background-color: transparent;
+}
+
+.hero-heading{
+    background-color: transparent;
+    font-size: 100px;
+}
 
 
 
