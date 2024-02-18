@@ -4,8 +4,24 @@
     src: url('/fonts/ClashDisplay-Medium.otf');
     font-style: normal;
     font-weight: 100;
-
 }
+
+@font-face {
+    font-family: panchang;
+    src: url('/fonts/Panchang-Bold.otf');
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: clashGrotesque;
+    src: url('/fonts/ClashGrotesk-Semibold.otf');
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+
 
 * {
     margin: 0;
@@ -68,7 +84,7 @@ li, a{
 
 .video-container{
     overflow: hidden;
-    height: 44vw;
+    height: 46vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -86,14 +102,68 @@ video{
 .hero-content{
     position: absolute;
     color: white;
-    font-family: clashDisplay;
+    font-family: panchang;
     background-color: transparent;
+    flex-direction: column;
+    text-align: center;
 }
 
 .hero-heading{
     background-color: transparent;
-    font-size: 100px;
+    font-size: 400%;
+    text-align: center;
+    line-height: 1;
 }
 
+.hero-container{
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    margin-top: 58px;
+}
+
+.hero-button{
+    font-family: "clashGrotesque", sans-serif;
+    font-size: 115%;
+    background-color: #79d97c;
+    color: black;
+    border-radius: 25px;
+    border: none;
+    padding: 15px 30px;
+    transition: opacity 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.hero-button:hover{
+    opacity: 0.75;
+}
+
+.video-section-container{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.section-header{
+    font-family: "panchang";
+    color: white;
+    font-size: 40px;
+}
+
+.video-grid{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.grid-item-1{
+    color: white;
+}
+
+.grid-item-2{
+    color: white;
+}
+
+.grid-item-3{
+    color: white;
+}
 
 
