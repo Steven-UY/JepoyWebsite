@@ -26,5 +26,6 @@
             "database": "airbnb",
             "username": "root"
         }
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

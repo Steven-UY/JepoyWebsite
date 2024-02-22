@@ -17,8 +17,8 @@
                 <nav>
                     <ul class ="nav_links">
                         <li><a href="#" onclick="location.reload();return false;">Home</a></li>
-                        <li><a href="https://discord.gg/UjBYkMhTCP">Discord</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCLeT80x19oPBDt_bd2GVRqA">Youtube</a></li>
+                        <li><a href="https://discord.gg/UjBYkMhTCP" target="_blank">Discord</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCLeT80x19oPBDt_bd2GVRqA" target="_blank">Youtube</a></li>
                     </ul>
                 </nav>
             </header>
@@ -32,20 +32,72 @@
                     Experience The Jepoy <br> Anthology
                 </h1>
                 <div class = "hero-container">
-                    <a class="hero-button">
+                    <a class="hero-button" href="#video-section-container">
                         Watch Now 
                     </a>
                 </div>
             </div>
         </div>
-        <div class = "video-section-container">
-            <h2 class="section-header">
-                Recent Videos
-            </h2>
+        <div class = "video-section-container" id="video-section-container">
+            <div class="flexbox-header">
+                <h2 class="section-header">
+                    Recent Videos
+                </h2>
+                <a class="header-button"href="https://www.youtube.com/channel/UCLeT80x19oPBDt_bd2GVRqA" target="_blank">
+                    Visit Channel
+                </a>
+            </div>
             <div class="video-grid">
-                <div class="grid-item-1">1</div>
-                <div class="grid-item-2">2</div>
-                <div class="grid-item-3">3</div>
+                    <div class="video-preview">
+                        <a href="https://youtu.be/4Vz45Qtcr_o" target="_blank">
+                            <div class="thumbnail-row">
+                                <div class="thumbnail-container">
+                                    <img class="thumbnail" src="/thumbnails/fortnitetomfoolery.jpg">
+                                    <div class="overlay-container">
+                                        <img class="icon" src="/images/yt_icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-caption">
+                                <div class="video-title">
+                                    Fortnite Tomfoolery
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <div class="video-preview">
+                    <a href="https://youtu.be/bysXKCEOa7Y" target="_blank">
+                        <div class="thumbnail-row">
+                            <div class="thumbnail-container">
+                                <img class="thumbnail" src="/thumbnails/Jepoy-Volume-2psd.jpg">
+                                <div class="overlay-container">
+                                    <img class="icon" src="/images/yt_icon.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-caption">
+                            <div class="video-title">
+                                JEPOY MIXTAPE VOL 2 
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-preview">
+                    <a href="https://youtu.be/ElLz4_RqDfs" target="_blank">
+                        <div class="thumbnail-row">
+                            <div class="thumbnail-container">
+                                <img class="thumbnail" src="/thumbnails/Jepoy-Volume-1.jpg">
+                                <div class="overlay-container">
+                                    <img class="icon" src="/images/yt_icon.png">
+                                </div>
+                            </div>
+                        <div class="video-caption">
+                            <div class="video-title">
+                                JEPOY MIXTAPE
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
