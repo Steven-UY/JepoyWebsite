@@ -6,3 +6,7 @@ CREATE TABLE users(
     country VARCHAR(50) NOT NULL,
     PRIMARY KEY (user_id)
 );
+
+@ --block
+DROP TABLE Departments
+

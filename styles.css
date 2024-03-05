@@ -21,6 +21,14 @@
 }
 
 
+@font-face {
+    font-family: clashGrotesque_light;
+    src: url('/fonts/ClashGrotesk-Light.otf');
+    font-style: normal;
+    font-weight: 100;
+}
+
+
 
 
 * {
@@ -156,7 +164,7 @@ video{
     justify-content: space-between;
 }
 
-.section-header{
+.video-section-header{
     font-family: "panchang";
     color: white;
     font-size: 40px;
@@ -186,6 +194,7 @@ video{
     row-gap: 40px;
     margin-right: 100px;
     margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 .thumbnail-container{
@@ -244,6 +253,102 @@ video{
 .video-preview:hover .icon{
     opacity: 1;
 }
+
+.members-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    column-gap: 25px;
+    row-gap: 40px;
+}
+
+.member-section-header{
+    font-family: "panchang";
+    color: white;
+    font-size: 35px;
+}
+
+.member-container{
+    border-style: solid;
+    border-width: px;
+    border-color: #3a3b3a;
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+.image-tile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    width: 375px;
+    height: 500px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.name{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: panchang;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.member-container:hover .name{
+    color: #79d97c; 
+}
+
+
+.member-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.overlay-member{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.description{
+    font-family: clashGrotesque_light;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:20px;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+.insta_icon{
+    width: 60px;
+    height: auto;
+    background-color: transparent;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+
 
 
 
