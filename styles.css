@@ -292,6 +292,13 @@ video{
     position: relative;
 }
 
+@media(min-width: 1920px){
+    .image-container{
+        width: 500px;
+        height: 600px;
+    }
+}
+
 .name{
     margin-top: 20px;
     margin-bottom: 10px;
@@ -339,6 +346,14 @@ video{
     line-height: 25px;
 }
 
+@media(min-width: 1920px){
+    .description{
+        font-size: 17px;
+        line-height: 30px;
+    }
+}
+
+
 
 .insta_icon{
     width: 60px;
@@ -347,6 +362,80 @@ video{
     padding-bottom: 10px;
     padding-right: 10px;
 }
+
+.footer_wrapper{
+     padding-right: 100px;
+}
+
+.footer_credential_list{
+    list-style-type: none;
+    display: block;
+}
+
+.footer_credential_list li{
+    float: left;
+    font-family: clashGrotesque_light;
+    font-size: 15px;
+    margin-right: 50px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid white;
+}
+
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_icon_list{
+    list-style-type: none;
+}
+
+.footer_icon_list li{
+    float: left;
+}
+
+.footer_icon_list li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+}
+
+.footer_icon_list li a:hover{
+    opacity: 0.75;
+}
+
+.footer_icon{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    background-color: white;
+}
+
+.footer_logo_jepoy{
+    width: 300px;
+    height: 100px;
+}
+
+
 
 
 
