@@ -29,8 +29,6 @@
 }
 
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +44,7 @@ header{
     width: 100%;
     top: 0;
     left: 0;
-    padding-right: 20px 8%;
+    padding-right: 20px;
     padding-left: 50px;
     display: flex;
     align-items: center;
@@ -61,6 +59,71 @@ header{
     width: 90px;
     height: auto;
     background-color: transparent;
+}
+
+.menu-image{
+    width: 20px;
+    height: auto;
+    background-color: transparent;
+    margin-top: 0px;
+}
+
+.menu-button{
+    border: none;
+    margin-top: 10px;
+    width: 40px;
+    height: 45px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-links{
+    list-style-type: none;
+}
+
+.sidemenu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 0px;
+    transition: 0.3s;
+}
+
+.sidemenu.open{
+    width: 250px;
+}
+
+.sidemenu a {
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: "clashDisplay", sans-serif;
+  }
+
+.exit-button{
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+}
+
+.main-page-overlay{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    position: fixed;
 }
 
 nav{
@@ -292,13 +355,6 @@ video{
     position: relative;
 }
 
-@media(min-width: 1920px){
-    .image-container{
-        width: 500px;
-        height: 600px;
-    }
-}
-
 .name{
     margin-top: 20px;
     margin-bottom: 10px;
@@ -346,15 +402,6 @@ video{
     line-height: 25px;
 }
 
-@media(min-width: 1920px){
-    .description{
-        font-size: 17px;
-        line-height: 30px;
-    }
-}
-
-
-
 .insta_icon{
     width: 60px;
     height: auto;
@@ -372,8 +419,8 @@ video{
     display: block;
 }
 
-.footer_credential_list li{
-    float: left;
+.footer_credential_list, li{
+    float: right;
     font-family: clashGrotesque_light;
     font-size: 15px;
     margin-right: 50px;
@@ -410,7 +457,6 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
     width: 40px;
     height: 40px;
     overflow: hidden;
@@ -435,6 +481,121 @@ video{
     height: 100px;
 }
 
+@media(min-width: 1920px){
+    .description{
+        font-size: 17px;
+        line-height: 30px;
+    }
+} 
+
+@media (max-width: 725px){
+
+    header{
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    .hero-heading{
+        font-size: 30px;
+    }
+    .video-container{
+        height: 80vw;
+    }
+
+    .nav_links{
+        display: none;
+    }
+    
+    .logo{
+        margin-left: 420px;
+        width: 60px;
+        margin-top: 10px;
+    }
+
+    .hero-button{
+        font-size: 90%;
+        padding: 20px 30px;
+    }
+    .video-section-header{
+        font-family: "panchang";
+        color: white;
+        font-size: 30px;
+    }
+    .header-button{
+        display: none;
+    }
+
+    .video-section-container{
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .flexbox-header{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .video-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .video-section-container{
+        margin-top: 100px;
+    }
+
+    .video-caption{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .video-title{
+        color: white;
+        font-family: panchang;
+        font-size: 20px;
+        margin-top: 15px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .member-section-header{
+        display: flex;
+        font-family: "panchang";
+        color: white;
+        font-size: 28px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .members-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .footer_wrapper{
+        padding-right: 0px;
+   }
+
+   .footer_credential_list, li{
+    float: left;
+    font-family: clashGrotesque_light;
+    font-size: 15px;
+    margin-left: 28px;
+    margin-top: 10px;
+}
+
+}
 
 
 
