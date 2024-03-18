@@ -44,7 +44,7 @@ header{
     width: 100%;
     top: 0;
     left: 0;
-    padding-right: 20px;
+    padding-right: 0px;
     padding-left: 50px;
     display: flex;
     align-items: center;
@@ -420,7 +420,7 @@ video{
 }
 
 .footer_credential_list, li{
-    float: right;
+    float: left;
     font-family: clashGrotesque_light;
     font-size: 15px;
     margin-right: 50px;

@@ -9,21 +9,8 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "test",
-            "database": "office",
-            "username": "root"
-        },
-        {
-            "mysqlOptions": {
-                "authProtocol": "default",
-                "enableSsl": "Disabled"
-            },
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 3306,
-            "driver": "MySQL",
-            "name": "test2",
-            "database": "airbnb",
+            "name": "homework2",
+            "database": "homework2",
             "username": "root"
         }
     ],
