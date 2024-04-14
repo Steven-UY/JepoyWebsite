@@ -497,8 +497,9 @@ video{
     .hero-heading{
         font-size: 30px;
     }
+
     .video-container{
-        height: 80vw;
+        height: 50vh
     }
 
     .nav_links{
@@ -506,7 +507,7 @@ video{
     }
     
     .logo{
-        margin-left: 420px;
+        margin-left: 220px;
         width: 60px;
         margin-top: 10px;
     }
@@ -540,8 +541,8 @@ video{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .video-section-container{
@@ -552,6 +553,7 @@ video{
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     .video-title{
@@ -578,9 +580,13 @@ video{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-right: 50px;
-        margin-left: 50px;
+        margin-right: 15px;
+        margin-left: 15px;
         margin-top: 50px;
+    }
+
+    .image-container{
+        width: 90%;
     }
 
     .footer_wrapper{
@@ -593,6 +599,32 @@ video{
     font-size: 15px;
     margin-left: 28px;
     margin-top: 10px;
+}
+.hero-button:hover {
+    opacity: 1;  /* Resets any opacity change on hover to full visibility */
+    background-color: #79d97c;  /* Maintains the original background color */
+    color: black;  /* Keeps the text color the same */
+    transform: none;  /* Ensures there's no transformation like scale */
+    box-shadow: none;  /* Removes any shadow effects if present */
+}
+.video-preview:hover .video-title {
+    color: white;  /* Reset hover color to default */
+}
+
+.video-preview:hover .icon {
+    opacity: 0;  /* Keeps the opacity at 0 even when hovered */
+}
+
+.video-preview:hover .thumbnail {
+    transform: scale(1.0); /* You might also want to disable scaling */
+    filter: brightness(100%); /* Keeps the brightness unchanged on hover */
+}
+
+.member-container:hover .name {
+    color: white; /* Resets the color back to default on hover */
+}
+.footer_icon_list li a:hover {
+    opacity: 1; /* Keeps the opacity unchanged on hover */
 }
 
 }
